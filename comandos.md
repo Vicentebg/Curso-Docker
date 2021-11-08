@@ -52,7 +52,9 @@
 ## WEB
 #### Iremos hospedar um site estático
 **Baixando imagens não oficiais(feitos por outra pessoa)** - `docker run dockersamples/static-site`
+
 *Obs: Está imagem é para hospedar uma página html estática*
 
 **Rodando este container** - `docker run -d dockersamples/static-site`
+
 *Obs: A flag -d serve para rodar este comando "fora"do terminal, o docker vai rodar ele, não travando o próprio*

@@ -1,3 +1,8 @@
+#### Caso não queira fazer os testes em sua máquina existe este site para "treinar" os comandos
+`https://labs.play-with-docker.com/`
+
+## Comandos
+
 - **Para baixar/criar um container** - `docker run "iso"`
 	
 	Exemplo: `docker run ubuntu`

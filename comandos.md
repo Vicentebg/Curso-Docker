@@ -62,4 +62,7 @@
 - **Para linkar uma porta do container para sua máquina** - `docker run dockersamples/static-site "CONTAINER ID"`	
 ![image](https://user-images.githubusercontent.com/19577547/140806834-539a8ea2-71b4-4c56-8c58-a574da421c24.png)
 
-*Obs: A flag -P faz com que o docker atribua as portas aleatorias que ele vai escolher para o mundo externo(máquina) para poder falar com o container.*
+	*Obs: A flag -P faz com que o docker atribua as portas aleatorias que ele vai escolher para o mundo externo(máquina) para poder falar com o container.*
+
+- **Para ver qual porta o container está utilizando** - `docker port "CONTAINER ID"`
+![image](https://user-images.githubusercontent.com/19577547/140807169-48a380a9-ca08-4d88-ab07-8bc4baefc8ba.png)

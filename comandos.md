@@ -59,7 +59,7 @@
 
 	*Obs: A flag -d serve para rodar este comando "fora"do terminal, o docker vai rodar ele, não travando o próprio*
 	
-- **Para linkar uma porta do container para sua máquina** - `docker run dockersamples/static-site "CONTAINER ID"`	
+- **Para linkar uma porta do container para sua máquina** - `docker run dockersamples/static-site`	
 ![image](https://user-images.githubusercontent.com/19577547/140806834-539a8ea2-71b4-4c56-8c58-a574da421c24.png)
 
 	*Obs: A flag -P faz com que o docker atribua as portas aleatorias que ele vai escolher para o mundo externo(máquina) para poder falar com o container.*

@@ -68,15 +68,16 @@
 
 	![image](https://user-images.githubusercontent.com/19577547/140807169-48a380a9-ca08-4d88-ab07-8bc4baefc8ba.png)
 
-Para dar um nome ao container - docker run -d -P --name meu-site dockersamples/static-site
+- **Para dar um nome ao container** - `docker run -d -P --name meu-site dockersamples/static-site`
 
-Para mapear uma porta - docker run -d -p "IP+PORTA" dockersamples/static-site
-Exemplo: docker run -d -p 192.168.0.2:80 dockersamples/static-site
+- **Para mapear uma porta** -` docker run -d -p "IP+PORTA" dockersamples/static-site`
 
-Setar uma váriavel de ambiente - docker run -d -P -e AUTHOR="Vicente" dockersamples/static-site
+	Exemplo: `docker run -d -p 192.168.0.2:80 dockersamples/static-site`
 
-Para retornar apenas os IDs - docker ps -q
+- **Setar uma váriavel de ambiente** - `docker run -d -P -e AUTHOR="Vicente" dockersamples/static-site`
 
-Para parar containers em massa - docker stop -t 0 $(docker ps -q)
-Obs:Ele irá parar todos os containers que forem listados no comando (docker ps -q) e a flag -t 0, diz para o container parar na hora, pois o tempo default do docker é de 10 segundos.
+- **Para retornar apenas os IDs** - `docker ps -q`
 
+- **Para parar containers em massa** - `docker stop -t 0 $(docker ps -q)`
+
+	*Obs: Ele irá parar todos os containers que forem listados no comando (docker ps -q) e a flag -t 0, diz para o container parar na hora, pois o tempo default do docker é de 10 segundos.*

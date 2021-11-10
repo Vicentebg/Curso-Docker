@@ -100,16 +100,18 @@
 Precisamos criar um arquivo chamado dockerfile em nosso programa com os seguintes exemplos de configuração:
 ![image](https://user-images.githubusercontent.com/19577547/141155742-dc5b3b6a-95c2-4c4c-a128-923e16518bf1.png)
 
-FROM node:latest
-MAINTAINER Vicente
-COPY . /var/www
-WORKDIR /var/www
-RUN npm install
-ENTRYPOINT npm start
-EXPOSE 3000
+	FROM node:latest
+	MAINTAINER Vicente
+	COPY . /var/www
+	WORKDIR /var/www
+	RUN npm install
+	ENTRYPOINT npm start
+	EXPOSE 3000
 
-docker build -f Dockerfile -t vicente/node .
-Obs: Iremos passar a tag da imagem, o seu nome, através da flag -t, imagens nao oficiais precisamos colocar NOME_DO_USUARIO/NOME_DA_IMAGEM.
+`docker build -f Dockerfile -t vicente/node . `
 
-Também podemos criar variáveis de ambiente utilizando o ENV, por exemplo a variável PORT diz em que porta nossa aplicação irá rodar.
+*Obs: Iremos passar a tag da imagem, o seu nome, através da flag -t, imagens nao oficiais precisamos colocar NOME_DO_USUARIO/NOME_DA_IMAGEM.*
+
+**Também podemos criar variáveis de ambiente utilizando o ENV, por exemplo a variável PORT diz em que porta nossa aplicação irá rodar.**
+
 ![image](https://user-images.githubusercontent.com/19577547/141158848-9e864516-471a-4eaf-8f48-7565184f2d12.png)

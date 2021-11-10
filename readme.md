@@ -83,6 +83,8 @@
 	*Obs: Ele irá parar todos os containers que forem listados no comando (docker ps -q) e a flag -t 0, diz para o container parar na hora, pois o tempo default do docker é de 10 segundos.*
 
 ## Trabalhando com Volumes
+
+ - O Volume sempre fica salvo no docker host
 	
 - **Para criar um container** - `docker run -v "/var/www" ubuntu`
 - `docker run -it -v "C:\Users\Vicente\Desktop:/var/www" ubuntu`
@@ -94,5 +96,5 @@
 	
 	**Exemplo:** `docker inspect f3`
 
-O Volume fica salvo no docker host
+
 

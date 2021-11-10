@@ -81,3 +81,18 @@
 - **Para parar containers em massa** - `docker stop -t 0 $(docker ps -q)`
 
 	*Obs: Ele irá parar todos os containers que forem listados no comando (docker ps -q) e a flag -t 0, diz para o container parar na hora, pois o tempo default do docker é de 10 segundos.*
+
+## Trabalhando com Volumes
+	
+- **Para criar um container** - `docker run -v "/var/www" ubuntu`
+- `docker run -it -v "C:\Users\Vicente\Desktop:/var/www" ubuntu`
+
+	*Obs: Quando utiliza-se o Desktop:, o dois pontos separa o que é da minha máquina para o que é do container*
+![image](https://user-images.githubusercontent.com/19577547/141129507-f8e762eb-e175-48e9-b578-daf42472f90b.png)
+
+- **Para inspecionar o container** - `docker inspect "CONTAINER ID"`
+	
+	**Exemplo:** `docker inspect f3`
+
+O Volume fica salvo no docker host
+

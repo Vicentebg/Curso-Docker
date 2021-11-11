@@ -146,7 +146,7 @@ Precisamos criar um arquivo chamado dockerfile em nosso programa com os seguinte
 	docker pull mongo
 
 - **Subindo o banco de dados** - `docker run -d --name meu-mongo --network minha-rede mongo`
-- 
+
 - **Subindo a aplicação** - `docker run --network minha-rede -d -p 8080:3000 douglasq/alura-books:Cap05`
 
 *Obs: Não esquecer de definir a rede em que ele vai subir, se não definir ele vai jogar na rede padrão do docker e não vai conseguir se comunicar com o banco*

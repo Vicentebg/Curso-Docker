@@ -66,3 +66,9 @@
     networks: 
       production-network:
           driver: bridge
+          
+- **Após o docker-compose.yml pronto, vamos rodar o seguinte comando no terminal** - `docker-compose build`
+
+- **Para subir os container sem o log** - `docker-compose up -d`
+
+- **Para visualizar os serviços que estão rodando** - `docker-compose ps`

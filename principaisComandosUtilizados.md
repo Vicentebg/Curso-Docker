@@ -1,4 +1,4 @@
-#### - Comandos relacionados às informações:
+# Comandos relacionados às informações:
 
 `docker version` - exibe a versão do docker que está instalada.
 
@@ -8,7 +8,7 @@
 
 `docker ps -a` - exibe todos os containers, independentemente de estarem em execução ou não.
 
-#### - Comandos relacionados à execução: Comandos relacionados à execução:
+# Comandos relacionados à execução: Comandos relacionados à execução:
 
 `docker run NOME_DA_IMAGEM` - cria um container com a respectiva imagem passada como parâmetro.
 
@@ -22,7 +22,7 @@
 
 `docker run -it --name NOME_CONTAINER --network NOME_DA_REDE NOME_IMAGEM` - cria um container especificando seu nome e qual rede deverá ser usada.
 
-#### - Comandos relacionados à inicialização/interrupção
+# Comandos relacionados à inicialização/interrupção
 
 `docker start ID_CONTAINER` - inicia o container com id em questão.
 
@@ -30,7 +30,7 @@
 
 `docker stop ID_CONTAINER` - interrompe o container com id em questão.
 
-#### - Comandos relacionados à remoção
+# Comandos relacionados à remoção
 
 `docker rm ID_CONTAINER` - remove o container com id em questão.
 
@@ -38,7 +38,7 @@
 
 `docker rmi NOME_DA_IMAGEM` - remove a imagem passada como parâmetro.
 
-#### - Comandos relacionados à construção de Dockerfile
+# Comandos relacionados à construção de Dockerfile
 
 `docker build -f Dockerfile` - cria uma imagem a partir de um Dockerfile.
 
@@ -46,7 +46,7 @@
 
 `docker build -f Dockerfile -t NOME_USUARIO/NOME_IMAGEM CAMINHO_DOCKERFILE` - constrói e nomeia uma imagem não-oficial informando o caminho para o Dockerfile.
 
-#### - Comandos relacionados ao Docker Hub
+# Comandos relacionados ao Docker Hub
 
 `docker login` - inicia o processo de login no Docker Hub.
 
@@ -54,13 +54,13 @@
 
 `docker pull NOME_USUARIO/NOME_IMAGEM` - baixa a imagem desejada do Docker Hub.
 
-#### - Comandos relacionados à rede
+# Comandos relacionados à rede
 
 `hostname -i` - mostra o ip atribuído ao container pelo docker (funciona apenas dentro do container).
 
 `docker network create --driver bridge NOME_DA_REDE` - cria uma rede especificando o driver desejado.
 
-#### - Comandos relacionados ao docker-compose
+# Comandos relacionados ao docker-compose
 
 `docker-compose build` - Realiza o build dos serviços relacionados ao arquivo docker-compose.yml, assim como verifica a sua sintaxe.
 

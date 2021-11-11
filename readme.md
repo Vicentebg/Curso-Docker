@@ -115,3 +115,19 @@ Precisamos criar um arquivo chamado dockerfile em nosso programa com os seguinte
 **Também podemos criar variáveis de ambiente utilizando o ENV, por exemplo a variável PORT diz em que porta nossa aplicação irá rodar.**
 
 ![image](https://user-images.githubusercontent.com/19577547/141158848-9e864516-471a-4eaf-8f48-7565184f2d12.png)
+
+docker run -p -d 8080:3000 -v "C:\Users\Vicente\Desktop\volume-exemplo:/var/www" -w "/var/www" node npm start
+Melhorando o comando: docker run -a -p 8080:3000 -v "$(pwd):/var/www" -w "/var/www" node npm start
+Exemplo: docker run -v "[CAMINHO_VOLUME_LOCAL:]CAMINHO_VOLUME_CONTAINER" NOME_DA_IMAGEM
+
+## Subindo a imagem no Docker Hub
+
+Para logar no docker hub - docker login
+
+Para dar um push na imagem que quer enviar para o Docker hub - docker push USERNAME/node
+docker push vicente/node
+
+
+Para dar um pull em alguma imagem - docker pull USERNAME/node
+Exemplo: docker pull vicente/node
+

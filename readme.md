@@ -131,3 +131,10 @@ docker push vicente/node
 Para dar um pull em alguma imagem - docker pull USERNAME/node
 Exemplo: docker pull vicente/node
 
+## Conectando Múltiplos Containers
+
+- **Criando uma rede** - docker network create --driver bridge minha-rede
+- **Listando as redes** - dcoker network ls
+
+- **Para não deixar o container ser associado a rede padrão** - docker run -it --name meu-container-de-ubuntu --network minha-rede ubuntu
+	Obs: A flag --network diz para atrelar a rede, a rede que acabamos de criar

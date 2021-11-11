@@ -138,3 +138,13 @@ Exemplo: docker pull vicente/node
 
 - **Para não deixar o container ser associado a rede padrão** - docker run -it --name meu-container-de-ubuntu --network minha-rede ubuntu
 	Obs: A flag --network diz para atrelar a rede, a rede que acabamos de criar
+
+## Pegando dados de um banco
+
+No exemplo a seguir utilizaremos dois comandos
+docker pull douglasq/alura-books:cap05
+docker pull mongo
+
+Subindo o banco de dados - docker run -d --name meu-mongo --network minha-rede mongo
+Subindo a aplicação - docker run --network minha-rede -d -p 8080:3000 douglasq/alura-books:Cap05
+Obs: Não esquecer de definir a rede em que ele vai subir, se não definir ele vai jogar na rede padrão do docker e não vai conseguir se comunicar com o banco

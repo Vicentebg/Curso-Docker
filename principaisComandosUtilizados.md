@@ -69,3 +69,8 @@
 `docker-compose down` - Para todos os serviços em execução que estejam relacionados ao arquivo docker-compose.yml.
 
 `docker-compose restart `- Caso queira reiniciar os serviços
+
+`docker-compose ps` - Lista os serviços que estão rodando.
+
+`docker exec -it alura-books-1 ping node2` - Executa o comando ping node2 dentro do container alura-books-1
+
